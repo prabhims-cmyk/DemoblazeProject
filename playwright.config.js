@@ -5,7 +5,10 @@ const config = ({
   expect:{
     timeout:40*1000
   },
-  reporter:'html',
+  reporter: [
+        ['html'],
+        ['allure-playwright']
+    ],
   use:{
     baseURL: 'https://www.demoblaze.com',
     browserName:'chromium',
