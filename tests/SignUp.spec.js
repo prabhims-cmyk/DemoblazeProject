@@ -12,7 +12,6 @@ customtest("TC01: Enter the username and password and click signup",async({page,
   const message = await sign.dialogboxClk();
   console.log(message);
   expect(message).toBe("Sign up successful.");
-  await page.pause();
 })
 
 customtest("TC02:Enter the username and password and click close",async({page,testDataSignUp})=>{
@@ -22,6 +21,5 @@ customtest("TC02:Enter the username and password and click close",async({page,te
   await sign.validLogin(testDataSignUp.username,testDataSignUp.password);
   await sign.closeClick();
   await expect(page.locator("#signin2")).toBeVisible();
-  await page.pause();
 })
 

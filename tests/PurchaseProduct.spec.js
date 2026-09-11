@@ -31,7 +31,6 @@ test("@cart TC08: Select a product from phone Add to Cart Click ok on the popup 
   await page.waitForTimeout(3000);
   await purchase.clickOKbtn(); 
   await context.close();
-  await page.pause();
 })
 
 test("@cart TC09: Select a product from monitor Add to Cart Click ok on the popup Add details and Purchase  ",async({browser})=>{
@@ -58,6 +57,5 @@ test("@cart TC09: Select a product from monitor Add to Cart Click ok on the popu
   await page.waitForTimeout(3000);
   await purchase.clickOKbtn(); 
   await context.close();
-  await page.pause();
 })
 

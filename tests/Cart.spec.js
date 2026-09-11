@@ -24,6 +24,5 @@ test("TC07: Select a product Add to Cart Click ok on the popup ",async({browser}
   await expect(page.locator("#tbodyid").getByText(loginData.product)).toBeVisible();
   await cart.deleteItemfromCart();
   await context.close();
-  await page.pause();
 })
 
