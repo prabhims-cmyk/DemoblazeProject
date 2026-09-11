@@ -1,0 +1,16 @@
+{
+  "name": "demoblazeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cart": "npx playwright test --grep @cart"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "allure-playwright": "^3.10.2"
+  }
+}
