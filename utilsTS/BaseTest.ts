@@ -6,8 +6,8 @@ interface TestDataSignUp{
 }
 export const customtest = basetest.extend<{testDataSignUp : TestDataSignUp}>({  // object customtest is the subclass of testcases
     testDataSignUp:{
-        username: "userpms" + Math.floor(Math.random() * 1000),
-        password: "pass@pms" + Math.floor(Math.random() * 1000)
+        username: "userpms" + Date.now(),
+        password: "pass@pms" + Date.now()
     },
 
     page: async ({ page }, use) => {

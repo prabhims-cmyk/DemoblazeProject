@@ -19,7 +19,7 @@ test("@cart TC08: Select a product from phone Add to Cart Click ok on the popup 
   console.log(message);
   await expect(message).toBe("Product added.");
   await cart.clickOnCartMenu();
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(5000);
   await expect(page.locator("#tbodyid").getByText(loginData.phone)).toBeVisible();
   await purchase.clickOnPlaceOrder();
   await purchase.addDetails(loginData.name,loginData.country,loginData.city,loginData.card,loginData.month,loginData.year);
@@ -46,6 +46,7 @@ test("@cart TC09: Select a product from monitor Add to Cart Click ok on the popu
   console.log(message);
   await expect(message).toBe("Product added.");
   await cart.clickOnCartMenu();
+  await page.waitForTimeout(5000);
   await expect(page.locator("#tbodyid").getByText(loginData.monitor)).toBeVisible();
   await purchase.clickOnPlaceOrder();
   await purchase.addDetails(loginData.name,loginData.country,loginData.city,loginData.card,loginData.month,loginData.year);
