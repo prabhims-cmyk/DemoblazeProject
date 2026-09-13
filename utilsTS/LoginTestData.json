@@ -1,0 +1,15 @@
+{
+    "correctUsername":"userpms452",
+    "correctPassword":"pass@pms501",
+    "wrongUsername":"userms452",
+    "wrongPassword":"pass@ms501",
+    "product":"Samsung galaxy s7",
+    "phone":"Samsung galaxy s6",
+    "monitor":"ASUS Full HD",
+    "name":"Testuser",
+    "country":"India",
+    "city":"Bglr",
+    "card":"123456",
+    "month":"January",
+    "year":"2026"
+}
